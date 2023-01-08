@@ -3,6 +3,9 @@ plugins {
     id("com.android.library")
 }
 
+group = "io.github.beksar1998"
+version = "0.0.3"
+
 kotlin {
     android()
     
@@ -14,6 +17,10 @@ kotlin {
         it.binaries.framework {
             baseName = "kmm-architecture-core"
         }
+    }
+
+    android {
+        publishLibraryVariants("release", "debug")
     }
 
     sourceSets {

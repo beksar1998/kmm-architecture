@@ -3,6 +3,9 @@ plugins {
     id("com.android.library")
 }
 
+group = "io.github.beksar1998"
+version = "0.0.3"
+
 kotlin {
     android()
     
@@ -16,8 +19,19 @@ kotlin {
         }
     }
 
+    android {
+        publishLibraryVariants("release", "debug")
+    }
+
     sourceSets {
-        val commonMain by getting
+        val commonMain by getting {
+            dependencies {
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+                implementation("io.github.beksar1998:kmm-platform-viewmodel:0.0.3")
+                implementation(project(":kmm-architecture-common-flow"))
+                implementation(project(":kmm-architecture-core"))
+            }
+        }
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
