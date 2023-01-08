@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "io.github.beksar1998"
-version = "0.0.3"
+version = "0.0.1"
 
 kotlin {
     android()
