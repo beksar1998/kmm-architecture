@@ -32,7 +32,7 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
-                implementation(project(":kmm-architecture-core"))
+                implementation("io.github.beksar1998:kmm-architecture-core:0.0.2")
             }
         }
         val commonTest by getting {

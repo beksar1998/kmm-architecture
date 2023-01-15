@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "io.github.beksar1998"
-version = "0.0.1"
+version = "0.0.2"
 
 kotlin {
     android()
@@ -32,7 +32,6 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
-                implementation("io.github.beksar1998:kmm-platform-viewmodel:0.0.3")
             }
         }
         val commonTest by getting {

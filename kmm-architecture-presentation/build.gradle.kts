@@ -28,9 +28,9 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
-                implementation("io.github.beksar1998:kmm-platform-viewmodel:0.0.3")
-                implementation(project(":kmm-architecture-common-flow"))
-                implementation(project(":kmm-architecture-core"))
+                implementation("io.github.beksar1998:kmm-platform-viewmodel:0.0.4")
+                implementation("io.github.beksar1998:kmm-architecture-common-flow:0.0.2")
+                implementation("io.github.beksar1998:kmm-architecture-core:0.0.2")
             }
         }
         val commonTest by getting {

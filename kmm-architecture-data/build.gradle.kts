@@ -31,7 +31,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation(project(":kmm-architecture-core"))
+                implementation("io.github.beksar1998:kmm-architecture-core:0.0.2")
             }
         }
         val commonTest by getting {
