@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "io.github.beksar1998"
-version = "0.0.1"
+version = "0.0.2"
 
 kotlin {
     android()
@@ -38,7 +38,11 @@ kotlin {
                 implementation(kotlin("test"))
             }
         }
-        val androidMain by getting
+        val androidMain by getting {
+             dependencies {
+                 implementation("com.google.android.material:material:1.7.0")
+             }
+        }
         val androidTest by getting
         val iosX64Main by getting
         val iosArm64Main by getting
